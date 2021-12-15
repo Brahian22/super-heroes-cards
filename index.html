@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,28 @@
     <link rel="stylesheet" href="./style/style.css">
     <title>Super Héroes</title>
 </head>
+
 <body>
-    <h1>Hola a todos</h1>
+
+
+    <h1>SuperHéroes</h1>
+    <hr />
+
+    <button class="display" id='marvel'>Marvel comics</button>
+    <button class="display" id='dc'>DC comics</button>
+
+    <template id='template-card'>
+        <div class="card">
+            <h5></h5>
+            <h4></h4>
+            <img alt='' src='' class='image' />
+        </div>
+    </template>
+
+    <div id="itemMarvel"></div>
+    <div id="itemDC"></div>
+
+    <script src='./scripts/script.js' type='module'></script>
 </body>
+
 </html>

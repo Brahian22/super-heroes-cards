@@ -6,8 +6,7 @@ export const data = [
         "publisher": "DC Comics",
         "alter_ego": "Bruce Wayne",
         "first_appearance": "Detective Comics #27",
-        "image": "https://raw.githubusercontent.com/jennymontoya1001/heroes/main/dc-batman.jpg"
-        
+        "image": "https://raw.githubusercontent.com/jennymontoya1001/heroes/main/dc-batman.jpg"  
     },
     {
         "id": 2,
@@ -181,5 +180,6 @@ export const data = [
         "image": "https://raw.githubusercontent.com/jennymontoya1001/heroes/main/marvel-silver.jpg"
     }
   ]
+
 
 
