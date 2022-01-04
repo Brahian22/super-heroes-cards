@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Super Héroes</title>
 </head>
 
@@ -14,22 +17,50 @@
 
     <h1>SuperHéroes</h1>
     <hr />
+    <center>
+        <button class="display btn btn-primary mx-5" id='marvel'>Marvel comics</button>
+        <button class="display btn btn-primary mx-5" id='dc'>DC comics</button>
+    </center>
 
-    <button class="display" id='marvel'>Marvel comics</button>
-    <button class="display" id='dc'>DC comics</button>
 
     <template id='template-card'>
-        <div class="card">
-            <h5></h5>
-            <h4></h4>
-            <img alt='' src='' class='image' />
-        </div>
+        <center>
+            <div class="card m-5">
+                <div class='card-body'>
+                    <h5></h5>
+                    <h4></h4>
+                    <img alt='' src='' class='image' />
+                </div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Ver más informacion
+                </button>
+            </div>
+        </center>
     </template>
 
-    <div id="itemMarvel"></div>
-    <div id="itemDC"></div>
+    <div class='row'>
+        <div id="itemMarvel" class='col-md-4'></div>
+    </div>
+
+
+    <div>
+        <div id="itemDC" class='col-md-4'></div>
+    </div>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div id='pruebaDelModal' class="modal-content">
+               
+            </div>
+        </div>
+    </div>
 
     <script src='./scripts/script.js' type='module'></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
